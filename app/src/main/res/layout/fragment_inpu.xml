@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.astorga.testapp.fragments.InputFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblNumero"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:textStyle="normal|bold"
+            android:textSize="24sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/txtNumber"
+            android:layout_alignBaseline="@+id/lblNumero"
+            android:layout_alignBottom="@+id/lblNumero"
+            android:layout_toEndOf="@+id/lblNumero"
+            android:layout_marginStart="56dp"
+            android:maxLength="16"
+            android:hint="Digito a descomponer" />
+
+        <Button
+            android:text="@string/button_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_generar"
+            android:layout_below="@+id/txtNumber"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</FrameLayout>
